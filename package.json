@@ -1,0 +1,42 @@
+{
+  "name": "grammar-checker-firefox-extension",
+  "version": "1.0.0",
+  "description": "AI-powered grammar checker extension for Firefox that provides real-time grammar correction suggestions",
+  "main": "background.js",
+  "scripts": {
+    "build": "web-ext build",
+    "start": "web-ext run",
+    "lint": "web-ext lint"
+  },
+  "keywords": [
+    "firefox",
+    "extension",
+    "grammar",
+    "checker",
+    "ai",
+    "huggingface",
+    "text-correction",
+    "writing-assistant"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wisqueo/grammercheck"
+  },
+  "devDependencies": {
+    "web-ext": "^7.0.0"
+  },
+  "webExt": {
+    "sourceDir": ".",
+    "artifactsDir": "web-ext-artifacts",
+    "ignoreFiles": [
+      "package.json",
+      "package-lock.json",
+      "README.md",
+      ".env",
+      "web-ext-artifacts/**",
+      "node_modules/**"
+    ]
+  }
+}
